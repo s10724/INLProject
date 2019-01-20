@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NERCore", "NERCore\NERCore.csproj", "{1359392F-8E4C-4EDD-8C60-C731C07C24F0}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonScripts", "PythonScripts\PythonScripts.pyproj", "{4307E8F2-6792-42F6-B3E5-DFA52EF9A847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NERTagerWPF", "NERTagerWPF\NERTagerWPF.csproj", "{3FE48465-93B2-4D79-8173-8BBB81387294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NERUtilitiesConsoleApp", "NERUtilitiesConsoleApp\NERUtilitiesConsoleApp.csproj", "{9FC2785C-1DF6-443B-BD98-73A8390492E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Debug|x64.ActiveCfg = Debug|x64
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Debug|x64.Build.0 = Debug|x64
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Release|x64.ActiveCfg = Release|x64
+		{1359392F-8E4C-4EDD-8C60-C731C07C24F0}.Release|x64.Build.0 = Release|x64
+		{4307E8F2-6792-42F6-B3E5-DFA52EF9A847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4307E8F2-6792-42F6-B3E5-DFA52EF9A847}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4307E8F2-6792-42F6-B3E5-DFA52EF9A847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4307E8F2-6792-42F6-B3E5-DFA52EF9A847}.Release|x64.ActiveCfg = Release|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Debug|x64.Build.0 = Debug|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Release|x64.ActiveCfg = Release|Any CPU
+		{3FE48465-93B2-4D79-8173-8BBB81387294}.Release|x64.Build.0 = Release|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Debug|x64.Build.0 = Debug|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Release|x64.ActiveCfg = Release|Any CPU
+		{9FC2785C-1DF6-443B-BD98-73A8390492E7}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF044EDE-DF7E-4F5C-8CB4-7A927816E7A0}
+	EndGlobalSection
+EndGlobal
