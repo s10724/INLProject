@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace NERCore
@@ -10,7 +11,8 @@ namespace NERCore
         {
             List<TaggerResult> results = new List<TaggerResult>();
             CRFPP crf = new CRFPP();
-            string fileName = @"D:\NKJP\Result\tekst.data";
+            string fileName = $@"temp\{DateTime.Now.Ticks}.data";
+            Directory.CreateDirectory("temp");
             string[] concraftLines = Run(text, fileName)?.Trim()?.Split('\n');
             string[] crfLines = crf.RunTest(fileName, modelFile)?.Trim()?.Split('\n');
             int indexStart = -1;

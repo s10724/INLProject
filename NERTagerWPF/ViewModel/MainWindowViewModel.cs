@@ -8,6 +8,7 @@ using System.Windows.Controls;
 using System;
 using PropertyChanged;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace NERTagerWPF
 {
@@ -47,6 +48,18 @@ namespace NERTagerWPF
 
         public void OnLoad()
         {
+            try
+            {
+                System.IO.DirectoryInfo di = new DirectoryInfo("temp");
+                foreach (FileInfo file in di.GetFiles())
+                {
+                    file.Delete();
+                }
+            }
+            catch
+            {
+
+            }
             ResultItems = new BindableCollection<SentenceViewModel>();
             Text = "Pochodzący z Krakowa pisarz Jan Nowak pracujący w gazecie Codziennej uszęszcza na studia do PJATK. Jan Kowalski mieszka w Warszawie i pracuje w szkole podstawowej imienia Juliusza Słowackiego.";
             Tagger.StartServer(@"concraft-pl.exe", @"concraft_model.gz");
@@ -55,7 +68,8 @@ namespace NERTagerWPF
         public async void TagText()
         {
             IsTagProcess = true;
-            List<TaggerResult> result = new List<TaggerResult>() ;
+            List<TaggerResult> result = new List<TaggerResult>();
+                 ResultItems = new BindableCollection<SentenceViewModel>();
             await Task.Run(() =>
             {
                 result = Tagger.TagText(Text, ModelPath);

@@ -46,7 +46,7 @@ namespace NERCore
         private StringBuilder testResultBuilder = new StringBuilder();
         public string RunTest(string textDataFile, string modelFile)
         {
-
+            testResultBuilder.Clear();
             Process process = new Process();
             process.StartInfo.FileName = @"crf_test.exe";
             process.StartInfo.Arguments = $"-m {modelFile} {textDataFile}";

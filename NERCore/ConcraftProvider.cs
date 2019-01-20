@@ -18,7 +18,7 @@ namespace NERCore
                 serverProcess.StartInfo.FileName = concraftPath;
                 serverProcess.StartInfo.Arguments = $"server --port=3000 -i {concraftModelPath} +RTS -N4";
                 serverProcess.StartInfo.UseShellExecute = false;
-            serverProcess.StartInfo.CreateNoWindow = true;
+                serverProcess.StartInfo.CreateNoWindow = true;
                 serverProcess.StartInfo.StandardOutputEncoding = Encoding.Default;
                 serverProcess.StartInfo.StandardErrorEncoding = Encoding.Default;
                 serverProcess.StartInfo.RedirectStandardOutput = true;
@@ -47,6 +47,7 @@ namespace NERCore
         StringBuilder builder = new StringBuilder();
         protected string Run(string text,string fileName = "")
         {
+            builder.Clear();
             OutputText.WriteLine($"Start tag: {text}");
             Process process = new Process();
             process.StartInfo.FileName = @"C:\Program Files (x86)\Microsoft Visual Studio\Shared\Anaconda3_64\python.exe";
